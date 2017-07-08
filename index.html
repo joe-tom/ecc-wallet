@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <style>
+            body{
+                text-align: center;
+            }
+            #header{
+                font-size: 50px;
+                font-weight: 400;
+                font-family: Arial;
+                text-align: center;
+                width: 100%;
+                margin-top: 100px;
+            }
+            #subheader{
+                width: 90%;
+                max-width: 600px;
+                font-family: Courier;
+                font-size: 14px;
+                margin: auto;
+                margin-top: 20px;
+                text-align: justify;
+                color: #999;
+            }
+            .key {
+                font-size: 12px;
+                font-family: Courier;
+                font-weight: 800;
+                float: left;
+            }
+            .keyWrap{
+                margin-top: 100px;
+                display: inline-block;
+            }
+        </style>
+    <head>
+    <body>
+        <div id="header">Wallet Generator</div>
+        <div id="subheader">
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        This wallet generator generates ECDSA based wallets for the bitcoin Secp256k1 curve. This wallet is not to be used in production yet. 
+        </div>
+        <div class="keyWrap">
+            <div class="key" id="privateKey">Private Key: </div>
+            <br>
+            <div class="key" id="publicKey"> Public Key: &nbsp;</div>
+        </div>
+
+        <script src="./sjcl.js"></script>
+        <script src="./wallet.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
